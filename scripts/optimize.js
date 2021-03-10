@@ -3,7 +3,6 @@ const fs = require("fs");
 const { optimize } = require("svgo");
 
 const filesFolder = config.svgFilesFolder;
-const optimizedFilesFolder = config.optimizedFilesFolder;
 
 async function optimizeIcons() {
   const files = fs.readdirSync(filesFolder);
@@ -17,7 +16,7 @@ async function optimizeIcons() {
         ...config.svgo,
       });
 
-      const optimizedFilePath = optimizedFilesFolder + "/" + file;
+      const optimizedFilePath = filesFolder + "/" + file;
       fs.writeFileSync(optimizedFilePath, result.data);
     }
   }

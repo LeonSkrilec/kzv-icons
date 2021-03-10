@@ -1,8 +1,9 @@
 const svgo = require("./svgo.config");
 
 module.exports = {
-  svgFilesFolder: __dirname + "/svg",
-  optimizedFilesFolder: __dirname + "/svg/optimized",
-  componentsFolder: __dirname + "/components",
+  srcFolder: __dirname + "/src",
+  distFolder: __dirname + "/dist",
+  svgFilesFolder: __dirname + "/src/svg",
+  componentsFolder: __dirname + "/src/components",
   svgo,
 };
