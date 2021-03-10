@@ -3,3 +3,14 @@ node_js:
   - node
 before_deploy:
   - npm run build
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  branch: main
+notifications:
+  email:
+    recipients:
+      - leon.skrilec@gmail.com
+    on_success: change
+    on_failure: always
