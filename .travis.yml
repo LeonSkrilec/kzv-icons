@@ -7,10 +7,5 @@ deploy:
   provider: npm
   email: "$NPM_EMAIL"
   api_key: "$NPM_TOKEN"
-  branch: release
-notifications:
-  email:
-    recipients:
-      - leon.skrilec@gmail.com
-    on_success: change
-    on_failure: always
+  on:
+    branch: release
