@@ -2,12 +2,12 @@ language: node_js
 node_js:
   - node
 before_deploy:
-  - npm run release
+  - npm run build
 deploy:
   provider: npm
   email: "$NPM_EMAIL"
   api_key: "$NPM_TOKEN"
-  branch: main
+  branch: release
 notifications:
   email:
     recipients:
