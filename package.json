@@ -11,7 +11,7 @@
     "rename": "node ./scripts/rename.js",
     "componentize": "node ./scripts/componentize.js",
     "build": "babel ./src/components -d ./dist && node ./scripts/copyFiles.js",
-    "release": "npm run build && npm publish --tag latest"
+    "release": "npm run build && npm version patch"
   },
   "repository": {
     "type": "git",
