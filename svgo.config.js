@@ -6,22 +6,15 @@ module.exports = {
         currentColor: true,
       },
     },
-    { name: "removeAttrs", params: { attrs: "(stroke|fill)" } },
     {
       name: "addAttributesToSVGElement",
       params: {
         attributes: [
           {
-            stroke: "currentColor",
-          },
-          {
             "stroke-linecap": "round",
           },
           {
             "stroke-linejoin": "round",
-          },
-          {
-            fill: "none",
           },
         ],
       },
