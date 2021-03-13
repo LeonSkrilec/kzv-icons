@@ -1,6 +1,7 @@
 const svgr = require("@svgr/core").default;
 const config = require("../config");
 const fs = require("fs");
+const fsExtra = require("fs-extra");
 const { pascalCase } = require("change-case");
 
 const srcFolder = config.srcFolder;
@@ -9,6 +10,7 @@ const filesFolder = config.svgFilesFolder;
 
 async function generateReactComponents() {
   const files = fs.readdirSync(filesFolder);
+  fsExtra.emptyDirSync(componentsFolder);
 
   for (const file of files) {
     if (file.endsWith(".svg")) {
