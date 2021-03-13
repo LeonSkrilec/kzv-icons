@@ -5,7 +5,7 @@ const filesFolder = config.svgFilesFolder;
 
 async function getFigmaIcons() {
   const exporter = figmaApiExporter(process.env.FIGMA_TOKEN);
-  const figmaFileId = "LFGWUwyi6maWPMqFfeLyn2";
+  const figmaFileId = "f4NjhEDOqw29Zhi1Uoz6BD";
   const canvasName = "IconsExport";
 
   const svgsData = await exporter.getSvgs({
