@@ -1,6 +1,6 @@
 {
   "name": "kzv-icons",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "KZV icons and utilities for syncing them with Figma",
   "main": "dist/index",
   "scripts": {
