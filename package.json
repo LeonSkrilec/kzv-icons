@@ -4,6 +4,7 @@
   "description": "KZV icons and utilities for syncing them with Figma",
   "main": "dist/index",
   "scripts": {
+    "test": "",
     "optimize": "node ./scripts/optimize.js",
     "download": "node ./scripts/download.js",
     "rename": "node ./scripts/rename.js",
