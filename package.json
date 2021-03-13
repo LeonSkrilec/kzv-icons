@@ -1,15 +1,15 @@
 {
   "name": "kzv-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "KZV icons and utilities for syncing them with Figma",
   "main": "dist/index",
   "scripts": {
     "test": "",
-    "sync": "npm run download && npm run rename && npm run optimize && npm run componentize",
     "optimize": "node ./scripts/optimize.js",
     "download": "node ./scripts/download.js",
     "rename": "node ./scripts/rename.js",
     "componentize": "node ./scripts/componentize.js",
+    "sync": "npm run download && npm run rename && npm run optimize && npm run componentize",
     "build": "babel ./src/components -d ./dist && node ./scripts/copyFiles.js",
     "release": "git checkout release && npm run build && npm version patch"
   },
