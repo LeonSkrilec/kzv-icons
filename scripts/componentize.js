@@ -3,7 +3,7 @@ const config = require("../config");
 const fs = require("fs");
 const fsExtra = require("fs-extra");
 const { pascalCase } = require("change-case");
-
+const generateIndex = require("./generateIndex");
 const srcFolder = config.srcFolder;
 const componentsFolder = config.componentsFolder;
 const filesFolder = config.svgFilesFolder;
@@ -26,20 +26,6 @@ async function generateReactComponents() {
 
   generateIndex();
   console.log("Componentized " + files.length + " icons.");
-}
-
-function generateIndex() {
-  const files = fs.readdirSync(componentsFolder);
-  const index = files
-    .map((file) => {
-      const typename = file.replace(".js", "");
-      if (typename === "index") return "";
-      return `export { default as ${typename} } from './${typename}';\n`;
-    })
-    .join("");
-
-  const indexFilePath = componentsFolder + "/index.js";
-  fs.writeFileSync(indexFilePath, index);
 }
 
 generateReactComponents();
