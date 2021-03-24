@@ -20,3 +20,10 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+dist
+src/icons
+src/svg
+src/hooks
+
+example/src/icons
