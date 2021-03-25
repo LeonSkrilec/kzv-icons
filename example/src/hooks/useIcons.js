@@ -1,18 +1,18 @@
-import { useMemo } from 'react'
+import { useMemo } from "react";
 import {
   Jezero,
   Slap,
   Koca,
   Pohodnistvo,
-  Zastava,
-  Voda,
+  KulturnaDediscina,
+  PoletnaOsvezitev,
   PlezanjeFerata,
-  Roza,
+  NaravneLepote,
   Zemljevid,
   Supanje,
   Bivak,
   Cerkev,
-  Pin,
+  Drugo as Pin,
   Dvorec,
   Ferata,
   Grad,
@@ -20,12 +20,12 @@ import {
   Izvir,
   Jama,
   Kopalisce,
-  Drevesa,
+  NaravniMuzej,
   Planina,
   RazgledniStolp,
   Soteska,
-  Sup
-} from '../icons'
+  Sup,
+} from "../icons";
 
 export default function useIcons() {
   const poiTypesIcons = useMemo(
@@ -43,27 +43,27 @@ export default function useIcons() {
       izvir: Izvir,
       jama: Jama,
       kopalisce: Kopalisce,
-      'muzej-na-prostem': Drevesa,
+      "muzej-na-prostem": NaravniMuzej,
       planina: Planina,
-      'razgledni-stolp': RazgledniStolp,
+      "razgledni-stolp": RazgledniStolp,
       soteska: Soteska,
-      'sup-tocka': Sup
+      "sup-tocka": Sup,
     }),
     []
-  )
+  );
 
   const interestsIcons = useMemo(
     () => ({
       pohodnistvo: Pohodnistvo,
-      kultura: Zastava,
-      'poletna-osvezitev': Voda,
+      kultura: KulturnaDediscina,
+      "poletna-osvezitev": PoletnaOsvezitev,
       feratanje: PlezanjeFerata,
-      'naravne-lepote': Roza,
+      "naravne-lepote": NaravneLepote,
       raziskovanje: Zemljevid,
-      supanje: Supanje
+      supanje: Supanje,
     }),
     []
-  )
+  );
 
-  return { poiTypesIcons, interestsIcons }
+  return { poiTypesIcons, interestsIcons };
 }
