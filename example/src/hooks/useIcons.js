@@ -25,6 +25,7 @@ import {
   RazgledniStolp,
   Soteska,
   Sup,
+  Park,
 } from "../icons";
 
 export default function useIcons() {
@@ -48,6 +49,7 @@ export default function useIcons() {
       "razgledni-stolp": RazgledniStolp,
       soteska: Soteska,
       "sup-tocka": Sup,
+      park: Park,
     }),
     []
   );

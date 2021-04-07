@@ -47,6 +47,7 @@ export { default as NaravneLepote } from './icons/components/NaravneLepote';
 export { default as NaravniMuzej } from './icons/components/NaravniMuzej';
 export { default as NiParkirisca } from './icons/components/NiParkirisca';
 export { default as Otrok } from './icons/components/Otrok';
+export { default as Park } from './icons/components/Park';
 export { default as Parkirisce } from './icons/components/Parkirisce';
 export { default as Pes } from './icons/components/Pes';
 export { default as Piknik } from './icons/components/Piknik';

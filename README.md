@@ -12,3 +12,7 @@ To sync icons from Figma file:
 To publish to GH pages run "npm run deploy"
 
 You need a figma private key in .env file.
+
+### Run example
+
+Run "npm run start" in /example folder.

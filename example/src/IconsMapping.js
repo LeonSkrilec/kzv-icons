@@ -21,6 +21,7 @@ export default function IconsMapping() {
     "slap",
     "soteska",
     "sup-tocka",
+    "park",
   ];
   const interests = [
     "feratanje",
