@@ -34,6 +34,7 @@ let index = files
 index += `export { default as useIcons } from './hooks/useIcons';\n`;
 
 const indexFilePath = config.srcFolder + "/index.js";
+fs.writeFileSync(indexFilePath, "");
 fs.writeFileSync(indexFilePath, index);
 
 console.log("Build ready in src folder.");
