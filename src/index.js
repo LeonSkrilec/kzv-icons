@@ -14,6 +14,7 @@ export { default as Dvorec } from './icons/components/Dvorec';
 export { default as Email } from './icons/components/Email';
 export { default as Facebook } from './icons/components/Facebook';
 export { default as Ferata } from './icons/components/Ferata';
+export { default as Filter } from './icons/components/Filter';
 export { default as Fotografija } from './icons/components/Fotografija';
 export { default as GlobinaJame } from './icons/components/GlobinaJame';
 export { default as Gorovje } from './icons/components/Gorovje';
