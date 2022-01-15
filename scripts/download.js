@@ -21,12 +21,12 @@ async function getFigmaIcons() {
   fsExtra.emptyDirSync(filesFolder);
 
   await exporter.downloadSvgs({
-    saveDirectory: filesFolder,
+    saveDirectory: config.svgFilesFolder,
     svgsData: svgsData.svgs,
     lastModified: svgsData.lastModified,
   });
   console.log(
-    "Successfully downloaded " + svgsData.svgs.length + " from Figma file."
+    "Successfully downloaded " + svgsData.svgs.length + " icons from Figma file."
   );
 }
 

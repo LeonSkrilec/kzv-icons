@@ -1,6 +1,6 @@
 {
   "name": "kzv-icons",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "KZV icons and utilities for syncing them with Figma",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -36,7 +36,7 @@
     "url": "https://github.com/LeonSkrilec/kzv-icons/issues"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^17.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

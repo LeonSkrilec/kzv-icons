@@ -4,7 +4,6 @@ const fs = require("fs");
 const fsExtra = require("fs-extra");
 const { pascalCase } = require("change-case");
 const generateIndex = require("./generateIndex");
-const srcFolder = config.srcFolder;
 const componentsFolder = config.componentsFolder;
 const filesFolder = config.svgFilesFolder;
 
