@@ -11,13 +11,16 @@ async function optimizeIcons() {
     if (file.endsWith(".svg")) {
       const svgFilePath = filesFolder + "/" + file;
       const svgString = fs.readFileSync(svgFilePath);
-      const result = optimize(svgString, {
-        path: svgFilePath,
-        ...config.svgo,
-      });
-
-      const optimizedFilePath = filesFolder + "/" + file;
-      fs.writeFileSync(optimizedFilePath, result.data);
+      try {
+        const result = optimize(svgString, {
+          path: svgFilePath,
+          ...config.svgo,
+        });
+        const optimizedFilePath = filesFolder + "/" + file;
+        fs.writeFileSync(optimizedFilePath, result.data);
+      } catch (error) {
+        console.error(error);
+      }
     }
   }
 

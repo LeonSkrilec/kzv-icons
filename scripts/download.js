@@ -6,7 +6,7 @@ const filesFolder = config.svgFilesFolder;
 
 async function getFigmaIcons() {
   const exporter = figmaApiExporter(process.env.FIGMA_TOKEN);
-  const figmaFileId = "FI3os9U80hzrpAEZfRacZl";
+  const figmaFileId = "Ce86cEv5rBNktOgcvqv2Ge";
   const canvasName = "IconsExport";
 
   const svgsData = await exporter.getSvgs({
@@ -26,7 +26,9 @@ async function getFigmaIcons() {
     lastModified: svgsData.lastModified,
   });
   console.log(
-    "Successfully downloaded " + svgsData.svgs.length + " icons from Figma file."
+    "Successfully downloaded " +
+      svgsData.svgs.length +
+      " icons from Figma file."
   );
 }
 
