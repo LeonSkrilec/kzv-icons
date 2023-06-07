@@ -1,6 +1,6 @@
 # kzv-icons
 
-[Icons preview page](https://leonskrilec.github.io/kzv-icons/)
+[Icons preview page](https://kam-za-vikend.github.io/kzv-icons/)
 
 To sync icons from Figma file:
 
